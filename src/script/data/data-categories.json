@@ -1,0 +1,43 @@
+{
+    "categories" : [
+        {
+            "name": "Meal Type",
+            "items": [
+                "Appetizers",
+                "Breakfast",
+                "Desserts",
+                "Dinner",
+                "Drinks"
+            ]
+        },
+        {
+            "name": "Dish Type",
+            "items": [
+                "Breads",
+                "Cakes",
+                "Salads",
+                "Smoothies",
+                "Soups Stews"
+            ]
+        },
+        {
+            "name": "Ingredient",
+            "items": [
+                "Beef",
+                "Chicken",
+                "Pasta",
+                "Salmon"
+            ]
+        },
+        {
+            "name": "Diet & Health",
+            "items": [
+                "Diabetic",
+                "Glutten Free",
+                "Healthy",
+                "Low Calorie",
+                "Low Fat"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodima | Food and recipe inspiration</title>
+</head>
+
+<body>
+  <header-navigation></header-navigation>
+
+  <main class="container">
+    <header-jumbotron title="Receipe Contest"
+      description="Receipe contests are like our big, constantly-in-progress dinner party—and you're invited."
+      action="How they work">
+    </header-jumbotron>
+
+    <section class="row mb-2">
+      <div class="col-sm-12 col-md-3">
+        <h5 class="pt-1">Receipes 👩‍🍳</h5>
+      </div>
+      <div class="col-sm-12 col-md-9">
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <search-bar></search-bar>
+          </div>
+          <div class="col-5 d-sm-none d-md-block text-right">
+            <dropdown-sort></dropdown-sort>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="d-none d-md-block col-3">
+        <div class="d-flow-root">
+          <h6 class="float-left">Filter by:</h6>
+          <a href="javascript:void(0)" id="clearFilter" class="text-filter float-right">Clear filter</a>
+        </div>
+        <hr>
+        <receipe-category></receipe-category>
+        <card-author></card-author>
+      </div>
+      <div class="col-sm-12 col-md-9">
+        <receipe-list></receipe-list>
+        <div id="loader-text" class="loader loader-default is-active" style="display: none;">
+          <div class="loader-message">Loading</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="details container mb-5" style="display:none;">
+    <breadcrumb-detail currentpage=""></breadcrumb-detail>
+
+    <div class="row">
+      <div class="col-12 col-md-5 mb-2">
+        <img src="" id="detailImage" class="img-fluid img-shadow">
+      </div>
+      <div class="col-12 col-md-7">
+        <detail-header title="" sourceName="" preparationMinutes="" servings="" summary="">
+        </detail-header>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 col-md-5 mb-4">
+        <h5>Ingredients</h5>
+        <hr>
+        <div class="card-inggredient px-3 py-3">
+          <ul class="ingredients"></ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 mb-4">
+        <h5>Method</h5>
+        <hr>
+        <ol class="methods"></ol>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

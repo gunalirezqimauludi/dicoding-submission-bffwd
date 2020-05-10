@@ -1,0 +1,149 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: .8rem;
+}
+
+.d-flow-root {
+    display: flow-root;
+}
+
+.text-filter {
+    font-size: 0.7rem;
+    color: #f29a96;
+
+    &:hover {
+        color: #e96d67;
+        text-decoration: none;
+    }
+}
+
+// Custom Buttom styles
+.btn {
+    font-family: "Open Sans", sans-serif;
+    padding: 0.375rem 1rem;
+    font-size: 0.8rem;
+}
+
+// Custom Badge styles
+.badge {
+    padding: 0.5rem 0.65rem;
+}
+
+// Custom Color styles
+.btn-dark,
+.badge-dark {
+    background-color: $black;
+}
+
+.details {
+    h5 {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+        border: .1px dashed $gray-400;
+    }
+
+    p,
+    span,
+    li {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+    }
+
+    .img-shadow {
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 15px 2px;
+    }
+
+    .author {
+        font-size: 0.7rem;
+        color: $gray-500;
+        text-transform: uppercase;
+
+        &::before {
+            content: "by ";
+            font-size: 0.6rem;
+            text-transform: lowercase;
+        }
+    }
+
+    .recipe-details {
+        .icon-detail-svg {
+            width: 32px;
+            background-color: #fce0dc;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 100%;
+            margin-right: 5px;
+        }
+    }
+
+    .card-inggredient {
+        padding: 4%;
+        border-width: 1px 1px 0px;
+        border-style: solid solid solid;
+        border-color: rgb(234, 234, 234) rgb(234, 234, 234) rgb(234, 234, 234);
+        border-image: initial;
+        border-bottom: 0px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 14px;
+            width: 94%;
+            height: 26px;
+            background: url('../assets/images/separator-bottom.gif') left center repeat-x;
+        }
+
+        .ingredients {
+            padding: 0 0 10px 0;
+            margin: 0px;
+            list-style: none;
+            margin-block-start: 0;
+
+            li {
+                padding: 10px;
+
+                &:nth-child(2n+1) {
+                    background-color: #fce0dc66;
+                }
+            }
+        }
+    }
+
+    .methods {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        margin-block-start: 0;
+
+        li {
+            counter-increment: method 1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(240, 242, 235);
+
+            &::before {
+                content: counter(method) ".";
+                font-weight: 700;
+                font-size: 23px;
+                margin-right: 8px;
+                float: left;
+                line-height: 1;
+            }
+        }
+    }
+}
