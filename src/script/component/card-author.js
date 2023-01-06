@@ -28,6 +28,10 @@ class CardAuthor extends HTMLElement {
                 padding: 10px;
             }
 
+            .card-author .card a, .card-author .card i {
+                color: #f29a96;
+            }
+
             .card-author .card a {
                 text-decoration: none;
             }
